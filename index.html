@@ -67,6 +67,72 @@
       $("#text").text(variable_text[obj.id]);
     }
 	</script>
+<script type="text/javascript">
+		 function doStuff1(obj) {
+       variable_text3 = {
+        1: "Head 1",
+        2: "Head 2",
+        3: "Head 3",
+        4: "Head 4", 
+        5: "Head 5",
+        6: "Head 6",
+        7: "Head 7",
+        8: "Head 8",
+        9: "Head 9",
+        10: "Head 10",
+        11: "Head 11",
+        12: "Head 12",
+        13: "Head 13",
+        14: "Head 14",
+        15: "Head 15",
+        16: "Head 16" 
+      }
+      variable_text4 = {
+     	1: "SubHead 1",
+        2: "SubHead 2",
+        3: "SubHead 3",
+        4: "SubHead 4", 
+        5: "SubHead 5",
+        6: "SubHead 6",
+        7: "SubHead 7",
+        8: "SubHead 8",
+        9: "SubHead 9",
+        10: "SubHead 10",
+        11: "SubHead 11",
+        12: "SubHead 12",
+        13: "SubHead 13",
+        14: "SubHead 14",
+        15: "SubHead 15",
+        16: "SubHead 16" 
+      }
+      variable_text5 = {
+      	1: "Body 1",
+        2: "Body 2",
+        3: "Body 3",
+        4: "Body 4", 
+        5: "Body 5",
+        6: "Body 6",
+        7: "Body 7",
+        8: "Body 8",
+        9: "Body 9",
+        10: "Body 10",
+        11: "Body 11",
+        12: "Body 12",
+        13: "Body 13",
+        14: "Body 14",
+        15: "Body 15",
+        16: "Body 16"
+      }
+
+      //this is just for debugging - you can open the developer console and see what's happening
+      console.log(obj);
+      console.log(obj.id);
+      // document.getElementById("text").innerHTML = variable_text[obj.id];
+      $("#text3").text(variable_text3[obj.id]);
+      $("#text4").text(variable_text4[obj.id]);
+      $("#text5").text(variable_text5[obj.id]);
+    }
+	</script>
 
   	<!--navigation bar -->
 	
@@ -107,20 +173,8 @@
 
 	<!-- second section - Insight -->
 <div id="insight" class="row content-area no-margin" >
-	<div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
-       <div class="col-md-2 col-xs-1">   <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div></div>
+	
+       <div class="col-md-2 col-xs-1">   </div>
        <div class="col-md-8 col-xs-10">
        <hr>
     <h2 class="text-center">SYSTEMS OF INSIGHT</h2>
@@ -141,21 +195,9 @@
            <li>Design an appropriate architecture to build these systems of insight</li>
            <li>Create new models and business strategies to become a more effective enterprise</li>
          </ul>
-           <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
+          
   </div>
-       <div class="col-md-2 col-xs-1">   <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
+       <div class="col-md-2 col-xs-1"> 
        </div>
      </div>
 	<!-- /second section -->
@@ -163,13 +205,6 @@
 	<!--keynote speaker-->
 
 	<div id="keynote" class="demo-3">
-	  <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
 		<h2>Keynote Speaker</h2>
 		        <figure>
 		        	<script type="text/javascript">
@@ -212,13 +247,7 @@
                	<button type = "button" class = "btn btn-danger" data-toggle = "collapse" data-target = "#demo">
 				  More
 				</button>
-				  <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
+				 
 	</div>
 	<div class="row no-margin text-center separator-bg">
        <div class="col-md-1"> </div>
@@ -232,13 +261,6 @@
      <br>
      <!--speakers-->
      <div id="container">
-       <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
      <div id="speakers">
      <section id="section2">
     <div class="container-fluid v-center">
@@ -385,8 +407,7 @@
                 </div>
             </div>
         </div>
-        </
-        div>
+        </div>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
@@ -411,25 +432,11 @@
 
     </div>
 </section>
-  <div>
-		<br>
-		<p>
-			<br>	
-		</p>
-		<br>
-	</div>
 </div>
 </div>
 
 		<!--Panelist-->
 	    <div id="panelist">
-	      <div>
-		<br>
-		<p>
-			<br>
-		</p>
-		<br>
-	</div>
      <section id="section1">
     <div class="container-fluid v-center">
     	<h2>2017 PANELIST</h2>
@@ -437,7 +444,7 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                     	<script type="text/javascript">
 						function hover9(element) {
 						    element.setAttribute('src', 'images/panelist1_active.png');
@@ -446,7 +453,7 @@
 						    element.setAttribute('src', 'images/panelist1_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img1" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist1_unactive.png" onmouseover="hover9(this);" onmouseout="unhover9(this);" />
+                        <img id="1" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist1_unactive.png" onmouseover="hover9(this);" onmouseout="unhover9(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Panelist 1</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -454,7 +461,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover10(element) {
 						    element.setAttribute('src', 'images/panelist2_active.png');
@@ -463,15 +470,15 @@
 						    element.setAttribute('src', 'images/panelist2_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img2" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist2_unactive.png" onmouseover="hover10(this);" onmouseout="unhover10(this);" />
+                        <img id="2" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist2_unactive.png" onmouseover="hover10(this);" onmouseout="unhover10(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Speaker 2</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 2</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                        <script type="text/javascript">
 						function hover11(element) {
 						    element.setAttribute('src', 'images/panelist3_active.png');
@@ -480,15 +487,15 @@
 						    element.setAttribute('src', 'images/panelist3_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist3_unactive.png" onmouseover="hover11(this);" onmouseout="unhover11(this);" />
+                        <img id="3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist3_unactive.png" onmouseover="hover11(this);" onmouseout="unhover11(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Speaker 3</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 3</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover12(element) {
 						    element.setAttribute('src', 'images/panelist4_active.png');
@@ -497,9 +504,9 @@
 						    element.setAttribute('src', 'images/panelist4_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist4_unactive.png" onmouseover="hover12(this);" onmouseout="unhover12(this);" />
+                        <img id="4" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist4_unactive.png" onmouseover="hover12(this);" onmouseout="unhover12(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Speaker 4</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 4</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
@@ -507,7 +514,7 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover13(element) {
 						    element.setAttribute('src', 'images/panelist5_active.png');
@@ -516,15 +523,15 @@
 						    element.setAttribute('src', 'images/panelist5_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist5_unactive.png" onmouseover="hover13(this);" onmouseout="unhover13(this);" />
+                        <img id="5" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist5_unactive.png" onmouseover="hover13(this);" onmouseout="unhover13(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Speaker 5</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 5</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover14(element) {
 						    element.setAttribute('src', 'images/panelist6_active.png');
@@ -533,15 +540,15 @@
 						    element.setAttribute('src', 'images/panelist6_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist6_unactive.png" onmouseover="hover14(this);" onmouseout="unhover14(this);" />
+                        <img id="6" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist6_unactive.png" onmouseover="hover14(this);" onmouseout="unhover14(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Speaker 6</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 6</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                       <script type="text/javascript">
 						function hover15(element) {
 						    element.setAttribute('src', 'images/panelist7_active.png');
@@ -550,15 +557,15 @@
 						    element.setAttribute('src', 'images/panelist7_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist7_unactive.png" onmouseover="hover15(this);" onmouseout="unhover15(this);" />
+                        <img id="7" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist7_unactive.png" onmouseover="hover15(this);" onmouseout="unhover15(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Speaker 7</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 7</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
               <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover16(element) {
 						    element.setAttribute('src', 'images/panelist8_active.png');
@@ -567,9 +574,9 @@
 						    element.setAttribute('src', 'images/panelist8_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist8_unactive.png" onmouseover="hover16(this);" onmouseout="unhover16(this);" />
+                        <img id="8" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist8_unactive.png" onmouseover="hover16(this);" onmouseout="unhover16(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Moderator 1</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 8</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
@@ -578,7 +585,7 @@
                <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                     	<script type="text/javascript">
 						function hover17(element) {
 						    element.setAttribute('src', 'images/panelist9_active.png');
@@ -587,15 +594,15 @@
 						    element.setAttribute('src', 'images/panelist9_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img1" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist9_unactive.png" onmouseover="hover17(this);" onmouseout="unhover17(this);" />
+                        <img id="9" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist9_unactive.png" onmouseover="hover17(this);" onmouseout="unhover17(this);" onclick="doStuff1(this)"/>
                     </a>
-                    	<p> <span class="name"><strong>Panelist 1</strong></span><br />
+                    	<p> <span class="name"><strong>Panelist 9</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
                 </div>
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover18(element) {
 						    element.setAttribute('src', 'images/panelist10_active.png');
@@ -604,7 +611,7 @@
 						    element.setAttribute('src', 'images/panelist10_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img2" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist10_unactive.png" onmouseover="hover18(this);" onmouseout="unhover18(this);" />
+                        <img id="10" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist10_unactive.png" onmouseover="hover18(this);" onmouseout="unhover18(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Speaker 2</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -612,7 +619,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                        <script type="text/javascript">
 						function hover19(element) {
 						    element.setAttribute('src', 'images/panelist11_active.png');
@@ -621,7 +628,7 @@
 						    element.setAttribute('src', 'images/panelist11_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist11_unactive.png" onmouseover="hover19(this);" onmouseout="unhover19(this);" />
+                        <img id="11" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist11_unactive.png" onmouseover="hover19(this);" onmouseout="unhover19(this);" onclick="doStuff1(this)" />
                     </a>
                     	<p> <span class="name"><strong>Speaker 3</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -629,7 +636,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover20(element) {
 						    element.setAttribute('src', 'images/panelist12_active.png');
@@ -638,7 +645,7 @@
 						    element.setAttribute('src', 'images/panelist12_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist12_unactive.png" onmouseover="hover20(this);" onmouseout="unhover20(this);" />
+                        <img id="12" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist12_unactive.png" onmouseover="hover20(this);" onmouseout="unhover20(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Speaker 4</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -648,7 +655,7 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover21(element) {
 						    element.setAttribute('src', 'images/panelist13_active.png');
@@ -657,7 +664,7 @@
 						    element.setAttribute('src', 'images/panelist13_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist13_unactive.png" onmouseover="hover21(this);" onmouseout="unhover21(this);" />
+                        <img id="13" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist13_unactive.png" onmouseover="hover21(this);" onmouseout="unhover21(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Speaker 5</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -665,7 +672,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover22(element) {
 						    element.setAttribute('src', 'images/panelist14_active.png');
@@ -674,7 +681,7 @@
 						    element.setAttribute('src', 'images/panelist14_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist14_unactive.png" onmouseover="hover22(this);" onmouseout="unhover22(this);" />
+                        <img id="14" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist14_unactive.png" onmouseover="hover22(this);" onmouseout="unhover22(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Speaker 6</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -682,7 +689,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                       <script type="text/javascript">
 						function hover23(element) {
 						    element.setAttribute('src', 'images/panelist15_active.png');
@@ -691,7 +698,7 @@
 						    element.setAttribute('src', 'images/panelist15_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist15_unactive.png" onmouseover="hover23(this);" onmouseout="unhover23(this);" />
+                        <img id="15" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist15_unactive.png" onmouseover="hover23(this);" onmouseout="unhover23(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Speaker 7</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -699,7 +706,7 @@
             </div>
               <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover24(element) {
 						    element.setAttribute('src', 'images/panelist16_active.png');
@@ -708,7 +715,7 @@
 						    element.setAttribute('src', 'images/panelist16_unactive.png');
 						}
 		        		</script>
-                        <img id="my-img3" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist16_unactive.png" onmouseover="hover24(this);" onmouseout="unhover24(this);" />
+                        <img id="16" style="width:100px;" class="img-circle img-responsive img-thumbnail" src="images/panelist16_unactive.png" onmouseover="hover24(this);" onmouseout="unhover24(this);" onclick="doStuff1(this)"/>
                     </a>
                     	<p> <span class="name"><strong>Moderator 1</strong></span><br />
             <span class="title">Chief Strategy Officer, Cleveland Browns</span></p>
@@ -720,7 +727,7 @@
                 <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                     	<script type="text/javascript">
 						function hover25(element) {
 						    element.setAttribute('src', 'images/panelist17_active.png');
@@ -737,7 +744,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover26(element) {
 						    element.setAttribute('src', 'images/panelist18_active.png');
@@ -754,7 +761,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                        <script type="text/javascript">
 						function hover27(element) {
 						    element.setAttribute('src', 'images/panelist19_active.png');
@@ -771,7 +778,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover28(element) {
 						    element.setAttribute('src', 'images/panelist20_active.png');
@@ -790,7 +797,7 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover29(element) {
 						    element.setAttribute('src', 'images/panelist21_active.png');
@@ -807,7 +814,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover30(element) {
 						    element.setAttribute('src', 'images/panelist22_active.png');
@@ -824,7 +831,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                       <script type="text/javascript">
 						function hover31(element) {
 						    element.setAttribute('src', 'images/panelist23_active.png');
@@ -841,7 +848,7 @@
             </div>
               <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover32(element) {
 						    element.setAttribute('src', 'images/panelist24_active.png');
@@ -861,7 +868,7 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover33(element) {
 						    element.setAttribute('src', 'images/panelist25_active.png');
@@ -878,7 +885,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                         <script type="text/javascript">
 						function hover34(element) {
 						    element.setAttribute('src', 'images/panelist26_active.png');
@@ -895,7 +902,7 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="text-center">
-                    <a href="">
+                    <a data-toggle="modal" data-target="#mymodal1">
                       <script type="text/javascript">
 						function hover35(element) {
 						    element.setAttribute('src', 'images/panelist27_active.png');
@@ -914,13 +921,6 @@
            -->
         <!--/row-->
     </div>
-    <div>
-		<br>
-		<p>
-			<br>	
-		</p>
-		<br>
-	</div>
 </section>
 </div>
 <div id="agenda">
@@ -1077,7 +1077,7 @@
                 <div class="modal-dialog " role="document">
                   <div class="modal-content">
                   <div class="modal-header">
-                        <h4>2017 SPEAKERS AND MODERATORS</h4>
+                        <h3>2017 SPEAKERS AND MODERATORS</h3>
                     </div>
                     <div class="modal-body">
                       <h4 id="text1">
@@ -1088,6 +1088,27 @@
                       </h6>
                       <!--<img src="" style="width:100px;" class="img-circle img-responsive img-thumbnail">-->
                       <p id="text">
+
+                      </p>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+     <div class="modal fade" id="mymodal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog " role="document">
+                  <div class="modal-content">
+                  <div class="modal-header">
+                        <h3>2017 Panelist</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4 id="text3">
+                        
+                      </h4>
+                       <h6 id="text4">
+                        
+                      </h6>
+                      <!--<img src="" style="width:100px;" class="img-circle img-responsive img-thumbnail">-->
+                      <p id="text5">
 
                       </p>
                     </div>  

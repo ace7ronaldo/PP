@@ -124,10 +124,39 @@ html, body {
    opacity: 0.5px;
 }
 
+#mymodal {
+  text-align: center;
+   opacity: 0.5px;
+   color: #ed4c4c;
+}
+
+#mymodal h3{
+   color:#F5F5DC;
+}
+
+#mymodal .modal-header{
+  background-color: #ed4c4c;
+  border-radius: 5px 5px 0px 0px;
+}
+
 #panelist h2{
   text-align: center;
   background-color: #C0C0C0;
    opacity: 0.5px;
+}
+#mymodal1 {
+  text-align: center;
+   opacity: 0.5px;
+   color: #f44d3c;
+}
+
+#mymodal1 h3{
+   color:#f44d3c;
+}
+
+#mymodal1 .modal-header{
+  background-color: #C0C0C0;
+  border-radius: 5px 5px 0px 0px;
 }
 /* additional sections */
 #home {
@@ -145,17 +174,17 @@ html, body {
 
 #home h2{
   font-size: 45px;
-  color: #484545;
+  color: #ffffff;
 }
 
 #home h4{
   font-size: 25px;
-  color: #484545;
+  color: #ffffff;
 }
 
 #countbox1{
   font-size: 25px;
-  color: #484545;
+  color: #ffffff;
 
 }
 
