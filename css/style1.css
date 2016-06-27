@@ -58,7 +58,7 @@ Main components
 #cd-timeline {
   position: relative;
   padding: 2em 0;
-  margin-top: 2em;
+  margin-top: 0px;
   margin-bottom: 2em;
 }
 #cd-timeline::before {
@@ -73,7 +73,7 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
+    margin-top: 0px;
     margin-bottom: 3em;
   }
   #cd-timeline::before {
@@ -263,12 +263,12 @@ Main components
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 25px;
+ 
   }
   .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
@@ -295,8 +295,7 @@ Main components
     width: 100%;
     left: 122%;
     top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
