@@ -192,7 +192,9 @@ html, body {
   display: table;
   position: relative;
   font-size: 17px;
-  background-color: #C0C0C0;
+  background-color: #d3d3d3;
+  padding-top: 40px;
+  padding-bottom: 40px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -214,6 +216,9 @@ html, body {
   text-align: center;
   background-color: #f5f5dc;
   height:100%;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  min-height: 850px;
 }
 
 #keynote h2{
@@ -228,18 +233,28 @@ html, body {
 }
 
 
-#information {
-  background: url(../images/estate.jpg) no-repeat center center fixed; 
+#sponsors {
+  background: url(../images/sponsor-bg.jpg) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;
   width: 100%;
+  text-align: center;
+  padding-top: 60px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#information .panel {
+ .carousel-inner .active.left { left: -33%; }
+ .carousel-inner .next        { left:  33%; }
+ .carousel-inner .prev        { left: -33%; }
+ .carousel-control.left,.carousel-control.right {background-image:none;}
+ .item:not(.prev) {visibility: visible;}
+ .item.right:not(.prev) {visibility: hidden;}
+ .rightest{ visibility: visible;}
+
+#sponsors .panel {
   opacity: 0.85;
 }
 

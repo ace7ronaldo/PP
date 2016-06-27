@@ -15,11 +15,18 @@ html * {
 }
 
 #agenda {
+  padding-top: 70px;
   font-size: 100%;
   font-family: "Droid Serif", serif;
   color: #7f8c97;
   background-color: #3B3738;
- 
+
+}
+
+#agenda h3{
+  margin-top: 0px;
+  font-size: 40px;
+    text-align: center;
 }
 
 #agenda img {
@@ -59,7 +66,6 @@ Main components
   position: relative;
   padding: 2em 0;
   margin-top: 0px;
-  margin-bottom: 2em;
 }
 #cd-timeline::before {
   /* this is the vertical line */
@@ -74,7 +80,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 0px;
-    margin-bottom: 3em;
+  
   }
   #cd-timeline::before {
     left: 50%;
@@ -212,7 +218,7 @@ Main components
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 5px 0 #EF8D24;
+  box-shadow: 0 6px 0 #EF8D24;
 }
 .cd-timeline-content:after {
   content: "";
@@ -221,12 +227,11 @@ Main components
 }
 .cd-timeline-content h2 {
   color: #303e49;
-  font size: 100px;
+  font-size: 25px;
    text-align: center;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 15px;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
