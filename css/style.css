@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 /* Nav bar */
@@ -40,14 +41,14 @@ html, body {
 #menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(244, 77, 60, 1);
-    opacity:0.5;
+    opacity:0.7;
 }
 #menu.navbar-default .navbar-nav>.active>a,
 #menu.navbar-default .navbar-nav>.active>a:hover,
 #menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(205, 205, 205, 1)
     background-color: rgba(244, 77, 60, 1);
-    opacity:0.5;
+    opacity:0.7;
 }
 #menu.navbar-default .navbar-toggle {
     border-color: #f44d3c;
@@ -196,11 +197,6 @@ html, body {
   color: #e3e0cf;
   padding-top: 40px;
   padding-bottom: 40px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
 }
 
 #insight hr{
@@ -216,10 +212,8 @@ html, body {
 #keynote{
   text-align: center;
   background-color: #f5f5dc;
-  height:100%;
   padding-top: 70px;
   padding-bottom: 10px;
-  min-height: 850px;
 }
 
 #keynote h2{

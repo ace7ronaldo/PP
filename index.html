@@ -1,13 +1,11 @@
 <!DOCTYPE HTML>
 <html>
+<head>
 	<title>Phorum Philly</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet" />
 		<link href="css/style1.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<head>
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -301,7 +299,9 @@ $('.carousel .item').each(function(){
       $("#text7").text(variable_text7[obj.id]);
     }
   </script>
-
+  
+  </head>
+<body data-spy="scroll" data-target="#menu">
   	<!--navigation bar -->
 
 	<div id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -1822,6 +1822,47 @@ The Fillmore Philadelphia | 29 East Allen Street | Philadelphia, PA 19123</p>
     <p class="text-center"> &copy  PhorumPhilly.com, All Rights Reserved</p>
   </div>
 </div>
+
+<script >
+$(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+
+
+    $(function() {
+  $('a[href*=#]:not([href=#myCarousel])','a[href*=#]:not([href=#myCarousel1])','a[href*=#]:not([href=#myCarouse2])','a[href*=#]:not([href=#myCarousel3])','a[href*=#]:not([href=#myCarousel4])','a[href*=#]:not([href=#myCarousel5])','a[href*=#]:not([href=#myCarousel6])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 70
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+  </script>
+  <script>
+    $('body').scrollspy({
+  target: '#menu'
+});
+  </script>
+
 </body>
      <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                 <div class="modal-dialog " role="document">
