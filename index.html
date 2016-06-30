@@ -38,6 +38,124 @@ $('.carousel .item').each(function(){
   }
 });
   	</script>
+    <script type="text/javascript">
+      $('#myCarousel1').carousel({
+  interval: 40000
+});
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+
+  }
+  else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+  }
+});
+    </script>
+    <script type="text/javascript">
+      $('#myCarousel2').carousel({
+  interval: 40000
+});
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+
+  }
+  else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+  }
+});
+    </script>
+<script type="text/javascript">
+      $('#myCarousel3').carousel({
+  interval: 40000
+});
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+
+  }
+  else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+  }
+});
+    </script>
+    <script type="text/javascript">
+      $('#myCarousel4').carousel({
+  interval: 40000
+});
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+
+  }
+  else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+  }
+});
+    </script>
+<script type="text/javascript">
+      $('#myCarousel5').carousel({
+  interval: 40000
+});
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+
+  }
+  else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+
+  }
+});
+    </script>
+
+
+
   	<script>
 	  $(function() {
 	    $( "#accordion" ).accordion({
@@ -156,6 +274,33 @@ $('.carousel .item').each(function(){
       $("#text5").text(variable_text5[obj.id]);
     }
 	</script>
+  <script type="text/javascript">
+     function doStuff2(obj) {
+       variable_text6 = {
+        1: "Directions",
+        2: "Parking",
+        3: "Transportation",
+        4: "Physically challenged access",
+        5: "Accomodation",
+        6: "About"
+      }
+      variable_text7 = {
+        1: "http://www.thefillmorephilly.com/faninfo",
+        2: "GPS Address: 1025 N. Front Street, Philadelphia",
+        3: "UBER: Enjoy 20% off of your first ride with Uber Philadelphia by using the code: FillmorePhilly. If you are riding with Uber, you can simply enter Fillmore Philadelphia as your destination, sit back and enjoy the ride!",
+        4: "The Fillmore Philly is handicap accessible",
+        5: "Hotels in close proximity to The Fillmore Philadelphia",
+        6: "http://www.thefillmorephilly.com/VenueInfo"
+      }
+
+      //this is just for debugging - you can open the developer console and see what's happening
+      console.log(obj);
+      console.log(obj.id);
+      // document.getElementById("text").innerHTML = variable_text[obj.id];
+      $("#text6").text(variable_text6[obj.id]);
+      $("#text7").text(variable_text7[obj.id]);
+    }
+  </script>
 
   	<!--navigation bar -->
 
@@ -172,9 +317,9 @@ $('.carousel .item').each(function(){
 	                <li><a href="#keynote">Speakers</a></li>
 	                <li><a href="#agenda">Agenda</a></li>
 	                <li><a href="#sponsors">Sponsors</a></li>
-	                <li><a href="/about-us">Showcase</a></li>
-	                <li><a href="/about-us">Demo Pit</a></li>
-	                <li><a href="/contact">About</a></li>
+	                <li><a href="#showcase">Showcase</a></li>
+	                <li><a href="#demo-pit">Demo Pit</a></li>
+	                <li><a href="#about">About</a></li>
 	                <li><a href="https://twitter.com/phorumphilly" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @phorumphilly</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
 	                <li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 <script type="IN/FollowCompany" data-id="1337"></script></li>
@@ -1103,29 +1248,29 @@ $('.carousel .item').each(function(){
 	<div>
 	<br>
 	<br>
-	<h3>Presented by :</h3>
+	<br><h3>Presented by :</h3>
 	<div class="container">
     <div class="col-md-12">
         <div class="carousel slide" id="myCarousel">
           <div class="carousel-inner">
                 <div class="item active">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive">1</a></div>
+                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive"></a></div>
 
 									<div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-									<a href="#"><img src="images/Alteva_Logo.png" class="img-responsive">2</a></div>
+									<a href="#"><img src="images/Alteva_Logo.png" class="img-responsive"></a></div>
 
 									<div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                  <a href="#"><img src="images/aria-logo.png" class="img-responsive">3</a></div>
+                  <a href="#"><img src="images/aria-logo.png" class="img-responsive"></a></div>
 
                 </div>
 
                 <div class="item">
                   <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive">4</a></div>
+                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive"></a></div>
 
 									<div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive">5</a></div>
+                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive"></a></div>
 
                 </div>
 
@@ -1135,9 +1280,359 @@ $('.carousel .item').each(function(){
         </div>
     </div>
 </div>
+  <br><h3>Platinum Sponsors :</h3>
+  <div class="container">
+    <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel1">
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive"></a></div>
 
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Alteva_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/aria-logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+          </div>
+          <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+ <br> <h3>Gold Sponsors :</h3>
+
+  <div class="container">
+    <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel2">
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Alteva_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/aria-logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+          </div>
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+<br>
+  <h3>Silver by :</h3>
+  <div class="container">
+    <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel3">
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Alteva_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/aria-logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+          </div>
+          <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel3" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+<br>
+  <h3>Supporting organisations :</h3>
+  <div class="container">
+    <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel4">
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Alteva_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/aria-logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+          </div>
+          <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+<br>
+  <h3>Media Partner :</h3>
+  <div class="container">
+    <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel5">
+          <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/alliance-logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Alteva_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/aria-logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+                <div class="item">
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Artisan_Logo.png" class="img-responsive"></a></div>
+
+                  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
+                  <a href="#"><img src="images/Ben_Logo.png" class="img-responsive"></a></div>
+
+                </div>
+
+          </div>
+          <a class="left carousel-control" href="#myCarousel5" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel5" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+</div>
 </div>
 <!--end of sponsors-->
+<!--Showcase-->
+<div id="showcase">
+  <h3>2017 PHORUM SHOWCASE</h3><br>
+  <p>The Phorum Showcase provides a space for cutting-edge technology companies to meet and demo their product with key enterprise decision makers. If you're interested in this unique opportunity to showcase your company, products, and services at one of the hottest gatherings of enterprise decision makers on the East Coast, please contact sponsors@philadelphiapact.com</p>
+  <p>Come join the Phorum Showcase to meet and demo your products and services with key enterprise decision makers.</p>
+  <p>This year's exhibitors include:</p><br><br>  
+  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/dss-Logo.png" alt="">
+        <div class="overlay">
+           <a href="#agenda"><h2>Visit</h2></a>
+        </div>
+    </div>
+</div>
+ <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/dss-Logo.png" alt="">
+        <div class="overlay">
+           <a href="#agenda"><h2>Visit</h2></a>
+        </div>
+    </div>
+</div>
+ <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/dss-Logo.png" alt="">
+        <div class="overlay">
+           <a href="#agenda"><h2>Visit</h2></a>
+        </div>
+    </div>
+</div>
+ <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/dss-Logo.png" alt="">
+        <div class="overlay">
+           <a href="#agenda"><h2>Visit</h2></a>
+        </div>
+    </div>
+</div>
+ <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/dss-Logo.png" alt="">
+        <div class="overlay">
+           <a href="#agenda"><h2>Visit</h2></a>
+        </div>
+    </div>
+</div>
+
+</div>
+<!--end of showcase-->
+<!--demo pit-->
+<div id="demo-pit">
+<h3>2017 Demo Pit</h3>
+<div class="container">
+  <div class="row">
+                                    <div class="col-md-12">
+                                    <!-- Nav tabs --><div class="card">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#pit" aria-controls="pit" role="tab" data-toggle="tab">Win in the pit</a></li>
+                                        <li role="presentation"><a href="#2016" aria-controls="2016" role="tab" data-toggle="tab">2016 Participants</a></li>
+                                        <li role="presentation"><a href="#2015" aria-controls="2015" role="tab" data-toggle="tab">2015 Participants</a></li>
+                                        <li role="presentation"><a href="#2014" aria-controls="2014" role="tab" data-toggle="tab">2014 Participants</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="pit">
+                                        <h4>PHORUM DEMO PIT</h4>
+                                        <p>With the innovative technologies in our Demo Pit and Phorum Showcase, presentations, and panels featuring some of nation's leading thought leaders, Phorum is a must attend event for business leaders that want to gain a competitive edge. These finalists will be able to demonstrate their technology and compete for the Phorum Phorward award for best in show.</p>
+                                        <p>The Phorum Demo Pit was created to allow startups to connect with C-level enterprise decision makers attending the Phorum conference. Participating companies will demo their product and/or solution to over 400 Phorum attendees. Our 2015 winner, Tesorio was accepted to and graduated from Silicon Valley's prestigious Y Combinator accelerator program and raised a funding round led by First Round Capital.</p>
+                                        <br>
+                                        <h4>Demo Pit Judges</h4>
+                                        
+                                        <p><b>Ian Gallagher</b>
+                                        <br>Regional Director, Marketing
+                                        <br>Comcast Business </p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="2016">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                        <div role="tabpanel" class="tab-pane" id="2015">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="2014">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+                                    </div>
+</div>
+                                </div>
+  </div>
+</div>
+  
+</div>
+
+<!--end of demo pit-->
+<!--About-->
+<div id="about">
+  <!-- google map -->
+  <h2>About</h2>
+  <br>
+<div id="google_map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.8958870198553!2d-75.13882958517684!3d39.96608039084827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c868a76f633d%3A0x404baf79d46983e6!2s29+E+Allen+St%2C+Philadelphia%2C+PA+19123%2C+USA!5e0!3m2!1sen!2sin!4v1467180864538" width="900" height="509" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<p>Phorum will take place at Fillmore Philadelphia, a fantastic brand new venue in Philadelphia.</p>
+<p><b>Address:</b><br>
+The Fillmore Philadelphia | 29 East Allen Street | Philadelphia, PA 19123</p>
+<!-- /google map -->
+<br>
+<div id="section3"> 
+    <a data-toggle="modal" data-target="#mymodal2">
+            <img id="1" src="images/Directions.png" onclick="doStuff2(this)" />
+    </a>
+    <a data-toggle="modal" data-target="#mymodal2">
+            <img id="2" src="images/Parking.png" onclick="doStuff2(this)" />
+    </a>
+    <a data-toggle="modal" data-target="#mymodal2">
+            <img id="3" src="images/Transportation.png" onclick="doStuff2(this)" />
+    </a>
+    <a data-toggle="modal" data-target="#mymodal2">
+            <img id="4" src="images/handicap.png" onclick="doStuff2(this)" />
+    </a>
+    <a data-toggle="modal" data-target="#mymodal2">
+            <img id="5" src="images/Accomodation.png" onclick="doStuff2(this)" />
+    </a>
+    <a data-toggle="modal" data-target="#mymodal2">
+            <img id="6" src="images/About-WCL.png" onclick="doStuff2(this)" />
+    </a>
+</div>
+</div>
+<!--end of about-->
+<div id="abt">
+<div class="container">
+  <div class="row">
+                                    <div class="col-md-12">
+                                    <!-- Nav tabs --><div class="card">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#phorum" aria-controls="phorum" role="tab" data-toggle="tab">About Phorum</a></li>
+                                        <li role="presentation"><a href="#pact" aria-controls="pact" role="tab" data-toggle="tab">About PACT</a></li>
+                                        <li role="presentation"><a href="#steer" aria-controls="steer" role="tab" data-toggle="tab">Steering Committee</a></li>
+                                        <li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">News</a></li>
+                                        <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact us</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="phorum">
+                                        <p>Phorum is a technology conference, for business and technology executives, which focuses on how enterprises can maximize the business value of specific technologies and innovation. Phorum 2016 features leading industry experts, business executives, and cutting-edge technologists who will examine how companies collect data about the market, customer, and business, convert that data into usable information, and apply institutional experience to turn information into knowledge or insights.</p>
+                                        <p>Industry thought leaders as well as hands-on practitioners will provide engaging content through keynotes, panels, and interactive discussions to help executives understand not just the technology but how the technology can be pragmatically applied to transform the enterprise and achieve strategic business goals.</p>
+                                        <p>In addition to keynote speakers and panelists, the conference will also feature the all-new Phorum Technology Expo exhibition area, and the always popular "Phorum Demo Pit" where conference attendees can experience, first-first-hand, some of the most innovative technologies being developed in the Greater Philadelphia area.</p>
+                                        <p>Each year top executives from around the country gather at Phorum in a highly entertaining and collegial atmosphere. Register now to see how Phorum 2016 will help you with your future technology decisions.</p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="pact">
+                                          <p><i>Connecting the Technology, Healthcare and Capital Communities</i></p>
+                                          <p>Philadelphia Alliance for Capital and Technologies (PACT) is the region's largest business association focused on emerging growth companies in technology and healthcare.</p>
+                                          <p>PACT provides members with valuable content and connections to capital, coaching, and customers that will accelerate their growth and success, and to collaborate with other organizations to drive innovation and entrepreneurship in the Philadelphia region.</p>
+                                          <p>PACT's vision is to be the go-to resource for fast growing companies, and a driver of entrepreneurship and innovation.</p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="steer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="news">
+                                          <p><b>Press contact:</b></p>
+                                          <p>Kevin Jurrens<br>
+                                            Broadpath, Inc.<br>
+                                            215-644-6504<br>
+                                            kjurrens@broadpathpr.com</p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="contact">
+                                          <h3>For More Information About Phorum</h3>
+                                          <br>
+                                          <p><b>General contact:</b><br>
+                                              Dianne Strunk<br>
+                                              PACT<br>
+                                              215-790-3862<br>
+                                              dstrunk@philadelphiapact.com 
+                                          </p>
+                                           <p><b>Press contact:</b><br>
+                                              Kevin Jurrens<br>
+                                              Broadpath, Inc.<br>
+                                              215-644-6504<br>
+                                              kjurrens@broadpathpr.com
+                                          </p>   
+                                        </div>
+                                    </div>
+</div>
+                                </div>
+  </div>
+</div>
+  
+</div>
+  <div id="footer">
+  <div class="container">
+    <p class="text-center"> &copy  PhorumPhilly.com, All Rights Reserved</p>
+  </div>
+</div>
 </body>
      <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                 <div class="modal-dialog " role="document">
@@ -1175,6 +1670,23 @@ $('.carousel .item').each(function(){
                       </h6>
                       <!--<img src="" style="width:100px;" class="img-circle img-responsive img-thumbnail">-->
                       <p id="text5">
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog " role="document">
+                  <div class="modal-content">
+                  <div class="modal-header">
+                        <h3>Venue and Travel Information</h3>
+                    </div>
+                    <div class="modal-body">
+                      <h4 id="text6">
+
+                      </h4>
+                      <p id="text7">
 
                       </p>
                     </div>
