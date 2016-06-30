@@ -418,6 +418,10 @@ html, body {
   text-align: center;
 }
 
+#text-carousel3 img{
+  padding-left: 140px;
+}
+
 #abt{
   padding-top: 70px;
   font-size: 100%;
