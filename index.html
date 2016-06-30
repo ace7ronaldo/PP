@@ -8,7 +8,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
 	<script src="//maps.google.com/maps/api/js?sensor=true"></script>
 	<script src="js/modernizr.js"></script>
@@ -1834,7 +1833,7 @@ $(document).ready(function() {
   var locationPath = filterPath(location.pathname);
   var scrollElem = scrollableElement('html', 'body');
  
-  $('a[href*=#]').each(function() {
+  $('a[href*=#]:not([href*="#myCarousel"])').each(function() {
     var thisPath = filterPath(this.pathname) || locationPath;
     if (  locationPath == thisPath
     && (location.hostname == this.hostname || !this.hostname)
