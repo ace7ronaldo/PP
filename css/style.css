@@ -454,3 +454,7 @@ html, body {
   color: #252839;
   padding-top: 10px;
 }
+
+#google_map iframe{
+    width: 90%;
+}
