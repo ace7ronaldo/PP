@@ -6,10 +6,13 @@
 	<link href="css/style.css" rel="stylesheet" />
 		<link href="css/style1.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/timer.js"></script>
 	<script src="//maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="responsive-tabs.js"></script>
 	<script src="js/modernizr.js"></script>
   	<script src="js/main.js"></script>
   	<script type="text/javascript">
@@ -162,38 +165,42 @@ $('.carousel .item').each(function(){
 	</script>
 	<script type="text/javascript">
 		 function doStuff(obj) {
+
+      var img_file = obj.id;
+          $("#modal-img").attr('src', "images/speaker" + img_file + "_active.png ");
+
        variable_text1 = {
-        1: "Head 1",
-        2: "Head 2",
-        3: "Head 3",
-        4: "Head 4",
-        5: "Head 5",
-        6: "Head 6",
-        7: "Head 7",
-        8: "Head 8",
-        9: "Head 9"
+        1: "Michelle Berryman, Fidsa",
+        2: "Brian Hopkins",
+        3: "Jonathan Brassington",
+        4: "Nate Lentz",
+        5: "Robert J. Moore",
+        6: "Alex Robertson",
+        7: "Brian Hopkin",
+        8: "Brian Hopkin",
+        9: "Brian Hopkin"
       }
       variable_text2 = {
-        1: "SubHead 1",
-        2: "SubHead 2",
-        3: "SubHead 3",
-        4: "SubHead 4",
-        5: "SubHead 5",
-        6: "SubHead 6",
-        7: "SubHead 7",
-        8: "SubHead 8",
-        9: "SubHead 9"
+        1: "Managing Director, Strategy & Innovation, LiquidHub",
+        2: "Vice President & Principal Analyst, Forrester",
+        3: "CEO & Co-Founder, LiquidHub",
+        4: "Managing Partner, Osage Venture Partners",
+        5: "CEO, RJMetrics",
+        6: "Sr. Director, Business Intelligence, Comcast",
+        7: "Vice President & Principal Analyst, Forrester",
+        8: "Vice President & Principal Analyst, Forrester",
+        9: "Vice President & Principal Analyst, Forrester"
       }
       variable_text = {
-        1: "Body 1",
-        2: "Body 2",
-        3: "Body 3",
-        4: "Body 4",
-        5: "Body 5",
-        6: "Body 6",
-        7: "Body 7",
-        8: "Body 8",
-        9: "Body 9"
+        1: "Michelle is the Managing Director of Strategy & Innovation at LiquidHub. Her practice centers on guiding the vision and innovation efforts for digital customer experience with websites, social channels, e-commerce initiatives, software, portals and applications. Throughout her award-winning career, she has worked with brands like Coca-Cola, SAP, Kroger, Electrolux, Nike, Express and Hewlett-Packard, to build meaningful customer experiences across channels within the digital ecosystem and in the physical world.Michelle is a Fellow in the Industrial Designers Society of America, has served as IDSA President and was recently named one of the 50 Most Influential Designers of the last 50 years by the membership. She serves on the boards for Good Design Australia and for the IxDA (Interaction Design Association). She has spoken and led workshops at conferences around the world, including Australia, Brazil, Chile, China, Hong Kong, Korea, Poland, Taiwan, Turkey, and the United States.",
+        2: "Brian Hopkins is a VP and Principal Analyst at Forrester, covering systems of insight, big data, data management, and analytics technology architecture and strategy. He leads the emerging technology and technology innovation research and authors Forrester's top technology trends and top emerging technology reports for Enterprise Architecture Professionals. Brian has 15 years of experience in IT as an advisor, strategist, architect, and manager. He has helped numerous clients develop their technology watchlists, evolve their architecture practices, and develop strategic approaches to hot topics like big data, business intelligence, and data management. Before joining Forrester, he worked in the financial services and defense industries, where he acted as principal architect for information management technology; overhauled enterprise architecture practices, processes, and governance; and advised executives on emerging technologies.",
+        3: "Jonathan A. Brassington is the CEO and Co-Founder of LiquidHub. Brassington has led LiquidHub to be one of the fastest-growing companies in the greater Philadelphia and mid-Atlantic region, leading to recognition from Inc. 5000 and Philly 100. LiquidHub has been named to Forbes Most Promising Companies, Eastern Technology Council's Technology Company of the Year, SmartCEO's Executive Management Award, and PBJ's Best Places to Work. Over the course of his career, Brassington has been named to PBJ's 40 under 40 award, Philadelphia's Most Innovative Executives, and received the Temple University's Fox IT Innovator Award. He is an avid technology strategist and speaker as well as an early stage investor in a variety of technology driven businesses. Brassington is a Chairman of PACT. He earned his bachelor's degree from Misericordia University and master's from the University of Pennsylvania.",
+        4: "Nate joined Osage Venture Partners in 2008 and as Managing Partner oversees investment and portfolio management activities. He serves on the Board of Directors of BA-Insight, Canvas, InstaMed, FieldView, OpsDataStore, PeopleLinx, Pneuron, RackWare, Sidecar, and Wylei. He is also a board observer of 51Maps, Brazen, ExecOnline, Identropy, and ResiModel and formerly was on the board of Carnegie Speech and Medallion Analytics. He is a member of the Technology Investment Advisory Board for Ben Franklin Southeast Pennsylvania. Nate is a frequent speaker and panelist at venture events and is actively involved with numerous venture focused organizations including PACT, NJTC, MAVA, GCV, and Early Stage East.",
+        5: "Robert J. Moore is the co-founder and CEO of RJMetrics, a SaaS business intelligence company with the mission of inspiring and empowering data-driven people. Prior to RJMetrics, Moore served on the Investment Team of Insight Venture Partners, a leading software-focused venture capital and private equity firm based in New York. He is a graduate of Princeton University's department of Operations Research and Financial Engineering.",
+        6: "Alex joined Comcast in 2006 and currently works in the Technology and Product division leading efforts in data analysis and engineering. He specializes in the use of data to improve operations and better the customer experience. His team supports Comcast's development of new products and technology and spans the architecture of big data platforms, engineering of real-time data pipelines, and analysis. Alex holds an MBA from the University of Utah and BS in economics from Brigham Young University.",
+        7: "Brian Hopkins is a VP and Principal Analyst at Forrester, covering systems of insight, big data, data management, and analytics technology architecture and strategy. He leads the emerging technology and technology innovation research and authors Forrester's top technology trends and top emerging technology reports for Enterprise Architecture Professionals. Brian has 15 years of experience in IT as an advisor, strategist, architect, and manager. He has helped numerous clients develop their technology watchlists, evolve their architecture practices, and develop strategic approaches to hot topics like big data, business intelligence, and data management. Before joining Forrester, he worked in the financial services and defense industries, where he acted as principal architect for information management technology; overhauled enterprise architecture practices, processes, and governance; and advised executives on emerging technologies.",
+        8: "Brian Hopkins is a VP and Principal Analyst at Forrester, covering systems of insight, big data, data management, and analytics technology architecture and strategy. He leads the emerging technology and technology innovation research and authors Forrester's top technology trends and top emerging technology reports for Enterprise Architecture Professionals. Brian has 15 years of experience in IT as an advisor, strategist, architect, and manager. He has helped numerous clients develop their technology watchlists, evolve their architecture practices, and develop strategic approaches to hot topics like big data, business intelligence, and data management. Before joining Forrester, he worked in the financial services and defense industries, where he acted as principal architect for information management technology; overhauled enterprise architecture practices, processes, and governance; and advised executives on emerging technologies.",
+        9: "Brian Hopkins is a VP and Principal Analyst at Forrester, covering systems of insight, big data, data management, and analytics technology architecture and strategy. He leads the emerging technology and technology innovation research and authors Forrester's top technology trends and top emerging technology reports for Enterprise Architecture Professionals. Brian has 15 years of experience in IT as an advisor, strategist, architect, and manager. He has helped numerous clients develop their technology watchlists, evolve their architecture practices, and develop strategic approaches to hot topics like big data, business intelligence, and data management. Before joining Forrester, he worked in the financial services and defense industries, where he acted as principal architect for information management technology; overhauled enterprise architecture practices, processes, and governance; and advised executives on emerging technologies."
       }
 
       //this is just for debugging - you can open the developer console and see what's happening
@@ -207,59 +214,62 @@ $('.carousel .item').each(function(){
 	</script>
 <script type="text/javascript">
 		 function doStuff1(obj) {
+      var img_file = obj.id;
+          $("#modal1-img").attr('src', "images/panelist" + img_file + "_active.png ");
+
        variable_text3 = {
-        1: "Head 1",
-        2: "Head 2",
-        3: "Head 3",
-        4: "Head 4",
-        5: "Head 5",
-        6: "Head 6",
-        7: "Head 7",
-        8: "Head 8",
-        9: "Head 9",
-        10: "Head 10",
-        11: "Head 11",
-        12: "Head 12",
-        13: "Head 13",
-        14: "Head 14",
-        15: "Head 15",
-        16: "Head 16"
+        1: "Doug Cahill",
+        2: "RYAN CAPLAN",
+        3: "JEFFREY CEPULL",
+        4: "DARRYL JONES",
+        5: "MICHAEL KEARNS",
+        6: "BRENDAN McCORKLE",
+        7: "CHRIS McGINLEY",
+        8: "KOLEEN CAVANAUGH",
+        9: "JOANNE VOELCKER",
+        10: "MARCOS MENDELL",
+        11: "JOHN PALUMBO",
+        12: "SEAN REICHE",
+        13: "RYAN STEINBERGER",
+        14: "ANI VEMPRALA",
+        15: "JIM WALKER",
+        16: "Doug Cahill"
       }
       variable_text4 = {
-     	1: "SubHead 1",
-        2: "SubHead 2",
-        3: "SubHead 3",
-        4: "SubHead 4",
-        5: "SubHead 5",
-        6: "SubHead 6",
-        7: "SubHead 7",
-        8: "SubHead 8",
-        9: "SubHead 9",
-        10: "SubHead 10",
-        11: "SubHead 11",
-        12: "SubHead 12",
-        13: "SubHead 13",
-        14: "SubHead 14",
-        15: "SubHead 15",
-        16: "SubHead 16"
+     	1: "VP, Product Manager, Wells Fargo Bank, N.A.",
+        2: "Founder & President, ColdLight Solutions, GM, Analytics, PTC",
+        3: "Vice President for Information Resources and CIO, Philadelphia University",
+        4: "Senior Director Strategic Marketing and Analytics, Zonoff",
+        5: "Professor of Computer and Information Sciences, University of Pennsylvania",
+        6: "Founder & CEO, CloudMine",
+        7: "Managing Partner, BTB Security",
+        8: "Director, Consumer Marketing and Member Experience, Independence Blue Cross",
+        9: "Principal for Client Insight, Vanguard",
+        10: "US Biopharma Lead, Global Business Intelligence Center of Excellence, Pfizer",
+        11: "Chief Executive Officer, HealthRight",
+        12: "Digital Marketing and Web Business Manager/Architect, RDA",
+        13: "CTO, Picwell",
+        14: "Executive Chairman, Zoomi",
+        15: "VP, Product Manager, Wells Fargo Bank, N.A.",
+        16: "VP, Product Manager, Wells Fargo Bank, N.A."
       }
       variable_text5 = {
-      	1: "Body 1",
-        2: "Body 2",
-        3: "Body 3",
-        4: "Body 4",
-        5: "Body 5",
-        6: "Body 6",
-        7: "Body 7",
-        8: "Body 8",
-        9: "Body 9",
-        10: "Body 10",
-        11: "Body 11",
-        12: "Body 12",
-        13: "Body 13",
-        14: "Body 14",
-        15: "Body 15",
-        16: "Body 16"
+      	1: "Doug is Vice-President, Product Manager with 20+ years at Wells Fargo holding multiple positions managing business process implementation, product market management, developing strategic initiatives for customer experience and currently manages a Salesforce.com CRM instance for their small business commercial real estate lending group.Wells Fargo & Company (NYSE: WFC) is a nationwide, diversified financial services company with $1.8 trillion in assets. Founded in 1852, Wells Fargo provides banking, insurance, investments, mortgage, and consumer and commercial financial services through 8,700 locations, 13,000 ATMs, online (wellsfargo.com), and mobile devices. Wells Fargo is the #1 small business lender in the U.S. in dollars in 2014.",
+        2: "Ryan is the founder of ColdLight Solutions, an advanced analytics software company (acquired by PTC in May 2015). Ryan currently serves as the President of ColdLight & GM of Analytics, responsible for business strategy, product strategy and operations for the advanced analytics products at PTC.Ryan was named EY Entrepreneur of the Year 2014 Philadelphia Region, is a 5 time winner of the Philadelphia 500 fastest growth companies and was named to the Philadelphia Business Journal Hall of Fame by Wharton School of Business. He is a frequent guest lecturer on the topics of advanced analytics and entrepreneurship for many Fortune 100 businesses and leading universities including Wharton School of Business, Villanova, Fox School of Business and others.",
+        3: "Jeffrey Cepull is the Vice President for Information Resources and Chief Information Officer at Philadelphia University. Since 2001, he has led a team that has catalyzed the modernization and transformation of the information resources environment at the university, including a focus on data analytics, performance metrics, and data-driven decision-making. He has served on several EDUCAUSE groups and committees, and as a faculty member in the New IT Managers program. Jeff is currently a faculty member with the EDUCAUSE Institute's Leadership Program for new and aspiring higher ed CIOs. He holds a B.S. from the Rochester Institute of Technology, an M.B.A. from the University of Pittsburgh, and has completed the certificate program at the Harvard University School of Education's Institute for Higher Educational Management.",
+        4: "Currently Senior Director of one of the worlds leading Consumer IoT platform providers, Darryl Jones is an experienced marketing executive and a smart home data analytics pioneer, as well as a published author in Enterprise Information Systems.Prior to Zonoff, Darryl worked at General Electric as part of the chairman's ECLP program, as well as Northrop Grumman where he first served as an engineer developing cutting edge technology for the US Navy, and later led international marketing efforts for naval on board electronics. Darryl holds an Electrical Engineering degree from Lehigh University, and a Masters in Business Administration from Villanova University.",
+        5: "Michael Kearns is Professor of Computer and Information Science at the University of Pennsylvania, where he also holds secondary appointments in Economics and in the departments of Statistics and Operations, Information and Decisions in the Wharton School. He is Founding Director of both Penn's Warren Center for Network and Data Sciences, and the Networked and Social Systems Engineering undergraduate program. His research interests include machine learning, artificial intelligence, algorithmic game theory and computational finance. He has extensive industry experience in the application of machine learning to algorithmic trading, sponsored search, and many other areas.",
+        6: "Brendan oversees management practices and facilitates the company's high-level strategic vision. He is a serial entrepreneur with extensive mobile and UX experience. Prior to CloudMine, Brendan founded three companies, two of them software and mobile related: Textaurant, now TurnStar, and Fourth Power Solutions. Previously, he held various managerial and account relationship positions at Sunoco Chemicals, Business Solutions International and Fisher Scientific. Brendan received a Master of Science in Engineering in Computer and Information Science from the University of Pennsylvania, a program sponsored by the school of engineering and Wharton. He graduated with a B.A. from Ithaca College. Brendan likes rock climbing and high maintenance beers.",
+        7: "Chris is a Certified Information Systems Security Professional (CISSP) and Certified Computer Examiner (CCE) with over eleven years experience in the Information Security industry and over 20 years experience in the Information Technology industry. Chris is a Partner in BTB Security. Chris joined BTB Security after successfully managing information security consulting teams. Chris has developed security service methodologies and extensive tools for testing, assessing, reporting, and streamlining the delivery of information security and computer forensics engagements. Chris' background consists of business and IT architecture, IT support, software development, systems administration, information security, computer forensics, incident response, project management, sales support, team management, and much more. Chris' curious personality means he needs to understand how things work, what breaks them, and how to fix them. This trait, and a deep technical aptitude, make Chris an ideal trusted security advisor.",
+        8: "As Director of Consumer Marketing and Member Experience at Independence Blue Cross, Koleen Cavanaugh is accountable for marketing to the Individual Under-65 products to consumers, member communications, marketing analytics and member experience. In this capacity, she is directly responsible for developing and executing all direct mail, email, digital, and community marketing campaigns.Ms. Cavanaugh joined Independence Blue Cross in October 1991 and has held several positions within the company including Director of Marketing Administration where she oversaw the development of all product collateral and market communications. Prior to her current position, Ms. Cavanaugh was the Director of Product Services where she was accountable for the development and management of the small group and individual product portfolios.Ms. Cavanaugh grew up in Maryland. She earned a BA in Communications from Villanova University.",
+        9: "Joanne Voelcker is a principal in Corporate Marketing and Communications, where she leads Vanguard's Client Insight group. In this role, Ms. Voelcker is responsible for enterprise-wide investor feedback, reporting, analysis and research.Before her current role, she was a principal and managing director for Vanguard Investments Europe in Belgium. Ms. Voelcker has held leadership positions in various business units at Vanguard, providing retirement, investment advisory, and trust services. She led the business strategy and technical implementation of the launch of vanguard.com, which enabled clients to transact online.",
+        10: "Serves as the US Biopharma Lead in the Global Business Intelligence Center of Excellence. In this role, Marcos is charged with driving innovative thinking and approaches to analytics with our US businesses inclusive of Global Commercial Operations, Brand Strategy, Sales, Marketing, and Finance that create action driven insights focused on creating new opportunities, and enabling a higher level of business performance and results.",
+        11: "John Palumbo has been in the health care field since 1986. As CEO of HealthRight, LLC, John has utilized all of his experience and know-how to help lead the executive team and guide the company to the forefront of cutting-edge eHealth solutions.John's service in the health care industry started when he became a founding member of Healthworks Alliance, LLC, a pioneer in Health Information Networks (CHINS). Since then, he's held executive roles at a number of healthcare organizations, serving as EVP and COO of AllScripts, Inc and Vice Chairman of the board of i-trax Inc., a company that was sold to Walgreen's TakeCare Health division. From 2004 until 2010, Palumbo acted as Senior Vice President at Americsource Bergen Corporation.",
+        12: "Sean helps lead the Digital Sales and Marketing practice at RDA. He works with clients to help them understand how interactions, data, and context can lead to increased revenue and business optimization.Adoption of big data and marketing technologies can create very rich and valuable conversations. Getting to the 'who, what, where, when, and why' requires integrated channels, accessible intelligence, and context that support enterprise goals. Walking clients through the process and building the solutions that realize that value is what he enjoys.",
+        13: "Ryan is responsible for Pfizer's North American Business Technology and Global Business Intelligence Organization. In this role, Ryan is focused on applying innovative digital and analytical capabilities which drive business performance and improve customer engagement.During his tenure at Pfizer, Ryan has led a number of highly successful projects including several large-scale IT acquisition and divestiture efforts. He has extensive experience in both setting the strategy and leading major business transformation initiatives including Pfizer's highly successful SAP global deployment program. His diverse background spans a wide range of technologies and business processes supporting sales, marketing, finance, and supply chain.",
+        14: "As CTO, Ani leads a team of talented software engineers developing Picwell's platform and recommendation products. Prior to Picwell, Ani was VP of Media Products & Analytics at Adify, an online advertising technology startup acquired by Cox Enterprises for $300 million. He received his MBA from The Wharton School and his BA in Computer Science from UC Berkeley.",
+        15: "Jim Walker is the executive chairman of Zoomi, Inc. Prior to founding Zoomi, Jim was a partner at Accenture, LLP. There, he led the growth and strategy for a life sciences unit following Accenture's 2012 acquisition of Octagon Research Solutions, a pharmaceutical industry management solutions provider that Jim co-founded in 1999 and where he served as CEO.Over the past decade, Jim has received several awards, including the Ernst & Young Entrepreneur of the Year Award and the PACT Enterprise Awards Technology CEO of the Year. He received his bachelor's degree in Science Comprehensive from Villanova University, a master's degree in Environmental Science from Rutgers University, his M.B.A. from Duke University, and a Doctorate degree from the University of Pennsylvania.",
+        16: "Doug is Vice-President, Product Manager with 20+ years at Wells Fargo holding multiple positions managing business process implementation, product market management, developing strategic initiatives for customer experience and currently manages a Salesforce.com CRM instance for their small business commercial real estate lending group.Wells Fargo & Company (NYSE: WFC) is a nationwide, diversified financial services company with $1.8 trillion in assets. Founded in 1852, Wells Fargo provides banking, insurance, investments, mortgage, and consumer and commercial financial services through 8,700 locations, 13,000 ATMs, online (wellsfargo.com), and mobile devices. Wells Fargo is the #1 small business lender in the U.S. in dollars in 2014."
       }
 
       //this is just for debugging - you can open the developer console and see what's happening
@@ -319,9 +329,11 @@ $('.carousel .item').each(function(){
 	                <li><a href="#showcase">Showcase</a></li>
 	                <li><a href="#demo-pit">Demo Pit</a></li>
 	                <li><a href="#about">About</a></li>
-	                <li><a href="https://twitter.com/phorumphilly" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @phorumphilly</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-	                <li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/FollowCompany" data-id="1337"></script></li>
+	               <!--<li><a href="https://twitter.com/phorumphilly" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src0=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>-->
+                  <li><a href="https://twitter.com/phorumphilly"><img src="images/Twitter-about.png"></a></li>
+	                <!--<li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/FollowCompany" data-id="1337"></script></li>-->
+                  <li><a href="https://www.linkedin.com/groups/4203909/profile"><img src="images/Linkedin-about.png"></a></li>
 	            </ul>
 	        </div>
 	    </div>
@@ -372,7 +384,8 @@ $('.carousel .item').each(function(){
 	<!--keynote speaker-->
 
 	<div id="keynote" class="demo-3">
-		<h2>Keynote Speaker</h2>
+  <div class="container">
+		<h2 class="text-center">KEYNOTE SPEAKER</h2>
 		        <figure>
 		        	<script type="text/javascript">
 						function hover0(element) {
@@ -414,7 +427,7 @@ $('.carousel .item').each(function(){
                	<button type = "button" class = "btn btn-danger" data-toggle = "collapse" data-target = "#demo">
 				  More
 				</button>
-
+        </div>
 	</div>
 	<div class="row no-margin text-center separator-bg">
        <div class="col-md-1"> </div>
@@ -428,7 +441,7 @@ $('.carousel .item').each(function(){
      <div id="speakers">
      <section id="section2">
     <div class="container-fluid v-center">
-    	<h2>2017 SPEAKERS AND MODERATORS</h2>
+    	<h2 class="text-center">2017 SPEAKERS AND MODERATORS</h2>
     	<br><br>
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
@@ -603,7 +616,7 @@ $('.carousel .item').each(function(){
 	    <div id="panelist">
      <section id="section1">
     <div class="container-fluid v-center">
-    	<h2>2017 PANELIST</h2>
+    	<h2 class="text-center">2017 PANELIST</h2>
     	<br><br>
         <div class="row">
             <div class="col-sm-2 col-sm-offset-2 col-xs-6">
@@ -1088,7 +1101,7 @@ $('.carousel .item').each(function(){
 </section>
 </div>
 <div id="agenda">
-<h3>Agenda</h3>
+<h2 class="text-center">AGENDA</h2>
 		<br>
 	<section id="cd-timeline" class="cd-container">
 
@@ -1241,13 +1254,13 @@ $('.carousel .item').each(function(){
 </div>
 <!-- sponsors-->
 <div id="sponsors">
-	<h2>Sponsors</h2>
+	<h2 class="text-center">SPONSORS</h2>
 	<p>We have limited Phorum 2016 sponsorship available, for more information about sponsorship opportunities, please contact us at sponsor@phorumphilly.com
 	</p>
 	<div>
 	<br>
 	<br>
-	<br><h3>Presented by :</h3>
+	<br><h3>Presented by</h3>
 	<div class="container">
     <div class="col-md-12">
         <div class="carousel slide" id="myCarousel">
@@ -1279,7 +1292,7 @@ $('.carousel .item').each(function(){
         </div>
     </div>
 </div>
-  <br><h3>Platinum Sponsors :</h3>
+  <br><h3>Platinum Sponsors</h3>
   <div class="container">
     <div class="col-md-12">
         <div class="carousel slide" id="myCarousel1">
@@ -1311,7 +1324,7 @@ $('.carousel .item').each(function(){
         </div>
     </div>
 </div>
- <br> <h3>Gold Sponsors :</h3>
+ <br> <h3>Gold Sponsors</h3>
 
   <div class="container">
     <div class="col-md-12">
@@ -1345,7 +1358,7 @@ $('.carousel .item').each(function(){
     </div>
 </div>
 <br>
-  <h3>Silver by :</h3>
+  <h3>Silver by</h3>
   <div class="container">
     <div class="col-md-12">
         <div class="carousel slide" id="myCarousel3">
@@ -1378,7 +1391,7 @@ $('.carousel .item').each(function(){
     </div>
 </div>
 <br>
-  <h3>Supporting organisations :</h3>
+  <h3>Supporting organisations</h3>
   <div class="container">
     <div class="col-md-12">
         <div class="carousel slide" id="myCarousel4">
@@ -1411,7 +1424,7 @@ $('.carousel .item').each(function(){
     </div>
 </div>
 <br>
-  <h3>Media Partner :</h3>
+  <h3>Media Partner</h3>
   <div class="container">
     <div class="col-md-12">
         <div class="carousel slide" id="myCarousel5">
@@ -1448,7 +1461,8 @@ $('.carousel .item').each(function(){
 <!--end of sponsors-->
 <!--Showcase-->
 <div id="showcase">
-  <h3>2017 PHORUM SHOWCASE</h3><br>
+  <div class="container">
+  <h2 class="text-center">2017 PHORUM SHOWCASE</h2><br>
   <p>The Phorum Showcase provides a space for cutting-edge technology companies to meet and demo their product with key enterprise decision makers. If you're interested in this unique opportunity to showcase your company, products, and services at one of the hottest gatherings of enterprise decision makers on the East Coast, please contact sponsors@philadelphiapact.com</p>
   <p>Come join the Phorum Showcase to meet and demo your products and services with key enterprise decision makers.</p>
   <p>This year's exhibitors include:</p><br><br>  
@@ -1492,17 +1506,17 @@ $('.carousel .item').each(function(){
         </div>
     </div>
 </div>
-
+</div>
 </div>
 <!--end of showcase-->
 <!--demo pit-->
 <div id="demo-pit">
-<h3>2017 Demo Pit</h3>
+<h2 class="text-center">2017 DEMO PIT</h2>
 <div class="container">
   <div class="row">
                                     <div class="col-md-12">
                                     <!-- Nav tabs --><div class="card">
-                                    <ul class="nav nav-tabs" role="tablist">
+                                    <ul class="nav nav-tabs responsive" role="tablist" >
                                         <li role="presentation" class="active"><a href="#exss-pit" aria-controls="pit" role="tab" data-toggle="tab">Win in the pit</a></li>
                                         <li role="presentation"><a href="#exss-2016" aria-controls="2016" role="tab" data-toggle="tab">2016 Participants</a></li>
                                         <li role="presentation"><a href="#exss-2015" aria-controls="2015" role="tab" data-toggle="tab">2015 Participants</a></li>
@@ -1510,7 +1524,7 @@ $('.carousel .item').each(function(){
                                     </ul>
 
                                     <!-- Tab panes -->
-                                    <div class="tab-content">
+                                    <div class="tab-content responsive">
                                         <div role="tabpanel" class="tab-pane active" id="exss-pit">
                                         <h4>PHORUM DEMO PIT</h4>
                                         <p>With the innovative technologies in our Demo Pit and Phorum Showcase, presentations, and panels featuring some of nation's leading thought leaders, Phorum is a must attend event for business leaders that want to gain a competitive edge. These finalists will be able to demonstrate their technology and compete for the Phorum Phorward award for best in show.</p>
@@ -1665,15 +1679,18 @@ $('.carousel .item').each(function(){
 </div>
                                 </div>
   </div>
+  <script type="text/javascript">
+  (function($) {
+      fakewaffle.responsiveTabs(['xs', 'sm']);
+  })(jQuery);
+</script>
 </div>
   
-</div>
-
 <!--end of demo pit-->
 <!--About-->
 <div id="about">
   <!-- google map -->
-  <h2>About</h2>
+  <h2 class="text-center">ABOUT</h2>
   <br>
 <div id="google_map">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.8958870198553!2d-75.13882958517684!3d39.96608039084827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c868a76f633d%3A0x404baf79d46983e6!2s29+E+Allen+St%2C+Philadelphia%2C+PA+19123%2C+USA!5e0!3m2!1sen!2sin!4v1467180864538" width="900" height="509" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -1710,7 +1727,7 @@ The Fillmore Philadelphia | 29 East Allen Street | Philadelphia, PA 19123</p>
   <div class="row">
                                     <div class="col-md-12">
                                     <!-- Nav tabs --><div class="card">
-                                    <ul class="nav nav-tabs" role="tablist">
+                                    <ul class="nav nav-tabs responsive" role="tablist">
                                         <li role="presentation" class="active"><a href="#exss-phorum" aria-controls="phorum" role="tab" data-toggle="tab">About Phorum</a></li>
                                         <li role="presentation"><a href="#exss-pact" aria-controls="pact" role="tab" data-toggle="tab">About PACT</a></li>
                                         <li role="presentation"><a href="#exss-steer" aria-controls="steer" role="tab" data-toggle="tab">Steering Committee</a></li>
@@ -1719,7 +1736,7 @@ The Fillmore Philadelphia | 29 East Allen Street | Philadelphia, PA 19123</p>
                                     </ul>
 
                                     <!-- Tab panes -->
-                                    <div class="tab-content">
+                                    <div class="tab-content responsive">
                                         <div role="tabpanel" class="tab-pane active" id="exss-phorum">
                                         <p>Phorum is a technology conference, for business and technology executives, which focuses on how enterprises can maximize the business value of specific technologies and innovation. Phorum 2016 features leading industry experts, business executives, and cutting-edge technologists who will examine how companies collect data about the market, customer, and business, convert that data into usable information, and apply institutional experience to turn information into knowledge or insights.</p>
                                         <p>Industry thought leaders as well as hands-on practitioners will provide engaging content through keynotes, panels, and interactive discussions to help executives understand not just the technology but how the technology can be pragmatically applied to transform the enterprise and achieve strategic business goals.</p>
@@ -1814,7 +1831,11 @@ The Fillmore Philadelphia | 29 East Allen Street | Philadelphia, PA 19123</p>
                                 </div>
   </div>
 </div>
-  
+    <script type="text/javascript">
+  (function($) {
+      fakewaffle.responsiveTabs(['xs', 'sm']);
+  })(jQuery);
+</script>
 </div>
   <div id="footer">
   <div class="container">
@@ -1881,6 +1902,7 @@ $(document).ready(function() {
                   <div class="modal-header">
                         <h3>2017 SPEAKERS AND MODERATORS</h3>
                     </div>
+                    <img src="" id="modal-img" style="width:100px;" class="img-circle img-responsive img-thumbnail"/>
                     <div class="modal-body">
                       <h4 id="text1">
 
@@ -1888,7 +1910,6 @@ $(document).ready(function() {
                        <h6 id="text2">
 
                       </h6>
-                      <!--<img src="" style="width:100px;" class="img-circle img-responsive img-thumbnail">-->
                       <p id="text">
 
                       </p>
@@ -1902,6 +1923,7 @@ $(document).ready(function() {
                   <div class="modal-header">
                         <h3>2017 Panelist</h3>
                     </div>
+                    <img src="" id="modal1-img" style="width:100px;" class="img-circle img-responsive img-thumbnail"/>
                     <div class="modal-body">
                       <h4 id="text3">
 

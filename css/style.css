@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   width: 100%;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Nav bar */
@@ -41,14 +42,14 @@ html, body {
 #menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(244, 77, 60, 1);
-    opacity:0.7;
+    opacity:0.8;
 }
 #menu.navbar-default .navbar-nav>.active>a,
 #menu.navbar-default .navbar-nav>.active>a:hover,
 #menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(205, 205, 205, 1)
     background-color: rgba(244, 77, 60, 1);
-    opacity:0.7;
+    opacity:0.8;
 }
 #menu.navbar-default .navbar-toggle {
     border-color: #f44d3c;
@@ -110,7 +111,7 @@ html, body {
     padding-bottom:50px;
     min-height:100%;
     min-height:calc(100% - 0);
-    color: #f44d3c;
+    color: #3b3a36;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -131,6 +132,10 @@ html, body {
    color: #ed4c4c;
 }
 
+#mymodal p{
+  text-align: left;
+}
+
 #mymodal h3{
    color:#F5F5DC;
 }
@@ -145,14 +150,19 @@ html, body {
   background-color: #C0C0C0;
    opacity: 0.5px;
 }
+
 #mymodal1 {
   text-align: center;
    opacity: 0.5px;
-   color: #f44d3c;
+   color: #3b3a36;
+}
+
+#mymodal1 p{
+  text-align: left;
 }
 
 #mymodal1 h3{
-   color:#f44d3c;
+   color:#3b3a36;
 }
 
 #mymodal1 .modal-header{
@@ -166,7 +176,6 @@ html, body {
   height: 100%;
   position: relative;
   width: 100%;
-  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -186,6 +195,7 @@ html, body {
 #countbox1{
   font-size: 25px;
   color: #ffffff;
+  font-family: 'Inconsolata', monospace;
 
 }
 
@@ -194,7 +204,7 @@ html, body {
   position: relative;
   font-size: 17px;
   background-color: #9fa8a3;
-  color: #e3e0cf;
+  color: #3b3a36;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -226,7 +236,7 @@ html, body {
 }
 
 #sponsors {
-  background: url(../images/sponsor-bg1.jpg) no-repeat center center fixed; 
+  background: url(../images/sponsor-bg1.png) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;
@@ -271,7 +281,7 @@ html, body {
 }
 
 #showcase img{
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 #showcase .hovereffect {
@@ -367,7 +377,6 @@ html, body {
 #demo-pit{
   padding-top: 70px;
   font-size: 100%;
-  font-family: "Droid Serif", serif;
   color: #5a5c51;
   background-color: #e3e0cf;
   height: 100%;
@@ -389,6 +398,25 @@ html, body {
 .tab-content{padding:20px}
 
 .card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+
+@media (max-width: 991px) {
+  .visible-tabs {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .visible-tabs {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-tabs {
+    display: none !important;
+  }
+}
+
 
 #about {
   padding-top: 50px;
@@ -425,8 +453,8 @@ html, body {
   height: 100%;
 }
 
-
 #footer {
   background-color: #e03c31;
   color: #252839;
+  padding-top: 10px;
 }

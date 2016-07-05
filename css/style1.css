@@ -17,7 +17,7 @@ html * {
 #agenda {
   padding-top: 70px;
   font-size: 100%;
-  font-family: "Droid Serif", serif;
+  font-family: 'Open Sans', sans-serif;
   color: #7f8c97;
   background-color: #3B3738;
 
@@ -129,10 +129,10 @@ Main components
   background: #c03b44; 
 }
 .cd-timeline-img.cd-movie {
-  background: #669999;
+  background: #c03b44;
 }
 .cd-timeline-img.cd-location {
-  background: #CCCC99;
+  background: #c03b44;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -218,7 +218,7 @@ Main components
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 6px 0 #EF8D24;
+  box-shadow: 0 6px 0 #c03b44;
 }
 .cd-timeline-content:after {
   content: "";
